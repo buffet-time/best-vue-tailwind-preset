@@ -14,7 +14,14 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"prepare": "husky install",
+		"lint-fix": "eslint --fix \"**/*.{ts,vue}\"",
+		"lint-check": "eslint \"**/*.{ts,vue}\"",
+		"format-fix": "prettier --check --write \"**/**\" ",
+		"format-check": "prettier --check \"**/**\"",
+		"type-check": "vue-tsc --noEmit",
+		"checks": "pnpm lint-check && pnpm format-check && pnpm type-check"
 	},
 	"dependencies": {
 		"vue": "^3.3.4"
