@@ -1,0 +1,35 @@
+{
+	"compilerOptions": {
+		"target": "ES2021", // keep your browser updated :)
+		"module": "esnext",
+		"moduleResolution": "node",
+		"jsx": "preserve", // Needed for Volar to work properly.
+
+		"strict": true,
+		"pretty": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"importHelpers": true,
+		"removeComments": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"experimentalDecorators": true,
+		"useDefineForClassFields": true,
+
+		"noEmit": true,
+		"noImplicitReturns": true,
+		"noUnusedParameters": true,
+		"allowUnreachableCode": false,
+		"allowSyntheticDefaultImports": true
+	},
+
+	"paths": {
+		"#root/*": ["./*"],
+		"#types": ["./src/types/Typings.ts"],
+		"#assets/*": ["./src/assets/*"]
+	},
+
+	"baseUrl": ".",
+	"lib": ["esnext", "DOM", "DOM.Iterable"]
+}
